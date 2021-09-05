@@ -53,7 +53,8 @@ main {
     display: inline-flex;
     flex-wrap: wrap;
     width: 1000px;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
     
 }
 
@@ -65,6 +66,7 @@ main {
 .img-text-box {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 span {
@@ -74,14 +76,29 @@ span {
 
 .location-container {
     background-image: url("resources/img-locations-background.jpg");
-    height: 600px;
+    height: 500px;
     width: 1200px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.inner-box h2 {
+    margin-bottom: 0px !important;
 }
 
 .location-box {
     display: flex;
     justify-content: center;
+    gap: 40px;
 
 }
 
@@ -89,8 +106,10 @@ span {
     background-color: black;
     opacity: 1;
     width: 300px;
-    margin-right: 40px;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .contact {
